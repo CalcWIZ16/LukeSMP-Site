@@ -16,6 +16,7 @@ body{
     background-position: center;
     background-color: var(--dark-color);
 }
+
 /* TEXT FORMATTING */
 .h1 {
     color: var(--dark-color);
@@ -37,6 +38,7 @@ body{
     font-size: 20px;
     font-weight: 400;
 }
+
 /* NAVIGATION BAR */
 .navbar{
     background-color:var(--dark-color);
@@ -58,16 +60,6 @@ body{
 .navbar div a:hover {
     color: var(--primary-color);
 }
-.playtab:hover {
-    background-color: var(--light-color);
-}
-.playtab {
-    background-color:var(--primary-color);
-    padding: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 14px;
-}
 
 /* SECTIONS */
 .section {
@@ -85,7 +77,8 @@ body{
     flex-direction: column;
     align-self: center;
     justify-content: flex-start;
-    padding-right: 260px;
+    padding-right: 200px;
+    margin: 30px;
 }
 .centered {
     display: flex;
@@ -136,6 +129,35 @@ body{
 .icon{
     height: 140px;
 }
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+.button {
+    background-color:var(--primary-color);
+    padding: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 14px;
+    margin: 15px;
+}
+.button a {
+    text-decoration: none;
+    font-size: larger;
+    color: var(--light-color);
+}
+.cyanButton {
+    background-color: var(--primary-color);
+}
+.purpleButton {
+    background-color: var(--secondary-color);
+}
+.redButtons {
+    background-color: var(--tertiary-color);
+}
+
 @media screen and (max-width: 600) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {

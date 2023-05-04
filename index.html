@@ -4,10 +4,19 @@
             <title>LukeSMP - Home</title>
             <meta charset="UTF-8">
             <link rel="stylesheet" href="style.css">
-            <script src="script.js"></script>
             <script src="https://kit.fontawesome.com/4b54a3a45b.js" crossorigin="anonymous"></script>
+            <script type="importmap">
+                {    
+                    "imports": {
+                        "three": "https://unpkg.com/three@0.152.0/build/three.module.js",
+                        "GLTFLoader": "https://unpkg.com/three@0.152.0/examples/jsm/loaders/GLTFLoader.js"
+                    }
+                }
+            </script>
+            <script type="module" src="threeRender.js"></script>
         </head>
     <body>
+        <canvas id="viewport"></canvas>
         <div class="navbar" id="navbar">
             <a href="index.html">
                 <img class="logo" src="assets/logo/logo.png" alt="logo" style="height:75px;">
@@ -27,7 +36,7 @@
             <div class="smallBox">
                 <div><img src="assets/icons/UpToDate.svg" alt="Up To Date" class="smallIcon"></div>
                 <div class="h3 boxHeader">Up To Date</div>
-                <div class="p">Running the fastest current software on the latest Minecraft update: version 1.19.4</div>
+                <div class="p">Running the fastest current software on the latest Minecraft update: 1.19.4</div>
             </div>
             <div class="smallBox">
                 <div><img src="assets/icons/ConnectAnywhere.svg" alt="Connect Anywhere" class="smallIcon"></div>

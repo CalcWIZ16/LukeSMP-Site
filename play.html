@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="script.js"></script>
+        <script src="status.js"></script>
     </head>
     <body>
         <div class="navbar" id="navbar">
@@ -21,15 +21,49 @@
         </div>
         <div class="section translucent centered" style="flex-direction: column;">
             <div class="h1">Play</div>
-            <div class="h2">Support </div>
+            <div class="h2">Subtitle of the Century</div>
         </div>
         <div class="section opaque boxes">
             <div class="boxes">
-                <div class="h2">
-                    Server Status
+                <div class="boxStack">
+                    <div class="longBox">
+                        <div class="h2" id="server-status">
+                            Status: Unknown
+                        </div>
+                    </div>
+                    <div class="longBox">
+                        <div class="h2" id="player-count">
+                            Players: 0/30
+                        </div>
+                    </div>
                 </div>
-                <div></div>
+                <div class="listBox">
+                    <div class="h2" style="align-self: center;">
+                        Online Players
+                    </div>
+                    <div class="lists">
+                        <div class="list">
+                            <div class="listHeads" id="player-heads1">
+
+                            </div>
+                            <div class="listNames" id="player-list1">
+
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="listHeads" id="player-heads2">
+
+                            </div>
+                            <div class="listNames" id="player-list2">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="section translucent">
+
         </div>
     </body>
 </html>

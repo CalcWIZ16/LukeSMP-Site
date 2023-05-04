@@ -16,6 +16,16 @@ body{
     background-position: center;
     background-color: var(--dark-color);
 }
+canvas{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
 /* TEXT FORMATTING */
 .h1 {
@@ -90,6 +100,151 @@ body{
     display: flex;
     align-content: center;
 }
+.footerLegal {
+    display: flex;
+    justify-content: center;
+    color: var(--light-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* BOXES */
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.boxStack {
+    display: flex;
+    flex-direction: column;
+}
+.smallBox {
+    background-color: var(--light-color);
+    margin-top: 42px;
+    margin-bottom: 42px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    border-radius: 18px;
+    width: 280px;
+    height: 280px;
+}
+.smallBox div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.largeBox {
+    background-color: var(--light-color);
+    margin: 42px;
+    padding: 20px;
+    border-radius: 18px;
+    width: 480px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.largeBox div {
+    display: flex;
+    /* align-content: center; */
+    /* text-align: left; */
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.longBox {
+    background-color: var(--light-color);
+    border-radius: 18px;
+    padding: 20px;
+    margin: 42px;
+}
+.listBox {
+    background-color: var(--light-color);
+    margin: 42px;
+    padding: 20px;
+    border-radius: 18px;
+    width: 480px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.listBox .lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.listBox .lists .list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.listBox .lists .list .listHeads {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    /* height: 100%;
+    width: fit-content; */
+}
+.listBox .lists .list .listNames {
+    display: flex;
+    flex-direction: column;
+}
+.listBox .lists .list .listHeads img {
+    margin: 4px;
+}
+.smallIcon {
+    height: 145px;
+}
+.largeIcon {
+    height: 220px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.button {
+    padding: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 14px;
+    margin: 10px;
+    width:fit-content;
+    transition:color 0.1s ease-in-out;
+}
+.button a {
+    text-decoration: none;
+    font-size: larger;
+    color: var(--light-color);
+}
+.cyanButton {
+    background-color: var(--primary-color);
+}
+/* .cyanButton:hover {
+    background-color: var(--secondary-color);
+} */
+.purpleButton {
+    background-color: var(--secondary-color);
+}
+/* .purpleButton:hover {
+    background-color: var(--tertiary-color);
+} */
+.redButton {
+    background-color: var(--tertiary-color);
+}
+/* .redButton:hover {
+    background-color: var(--primary-color);
+} */
+
 /* FOOTER */
 .footer {
     display: flex;
@@ -119,6 +274,7 @@ body{
 }
 .footerLinks a:active {
     color: var(--tertiary-color);
+    transition:none;
 }
 .footerIcons {
     display: flex;
@@ -138,102 +294,7 @@ body{
 }
 .footerIcons i:active {
     color: var(--secondary-color);
-}
-/* click color */
-.footerLegal {
-    display: flex;
-    justify-content: center;
-    color: var(--light-color);
-    font-size: 20px;
-    font-weight: 400;
-}
-
-/* BOXES */
-.boxes{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.smallBox {
-    background-color: var(--light-color);
-    margin-top: 42px;
-    margin-bottom: 42px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 15px;
-    border-radius: 18px;
-    width: 260px;
-    height: 300px;
-}
-.smallBox div {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.largeBox {
-    background-color: var(--light-color);
-    margin: 42px;
-    padding: 25px;
-    border-radius: 18px;
-    width: 480px;
-    height: 250px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.largeBox div {
-    display: flex;
-    /* align-content: center; */
-    /* text-align: left; */
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.smallIcon {
-    height: 140px;
-}
-.largeIcon {
-    height: 220px;
-}
-
-/* BUTTONS */
-.buttons {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.button {
-    padding: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 14px;
-    margin: 10px;
-    width:fit-content;
-    transition:color .2s ease-in-out;
-}
-.button a {
-    text-decoration: none;
-    font-size: larger;
-    color: var(--light-color);
-}
-.cyanButton {
-    background-color: var(--primary-color);
-}
-.cyanButton:hover {
-    background-color: var(--secondary-color);
-}
-.purpleButton {
-    background-color: var(--secondary-color);
-}
-.purpleButton:hover {
-    background-color: var(--tertiary-color);
-}
-.redButton {
-    background-color: var(--tertiary-color);
-}
-.redButton:hover {
-    background-color: var(--primary-color);
+    transition: none;
 }
 
 @media screen and (max-width: 600) {

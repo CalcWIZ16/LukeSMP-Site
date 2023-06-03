@@ -11,7 +11,6 @@ body{
     margin:0px;
     padding:0px;
     font-family: 'Prompt', sans-serif;
-    background-image: url(assets/banners/home.png);
     background-attachment: fixed;
     background-position: center;
     background-color: var(--dark-color);
@@ -88,7 +87,8 @@ canvas{
     flex-direction: column;
     align-self: center;
     justify-content: flex-start;
-    padding-right: 380px;
+    /* padding-right: 380px; */
+    max-width: 860px;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -166,7 +166,7 @@ canvas{
     margin: 42px;
     padding: 20px;
     border-radius: 18px;
-    width: 480px;
+    width: 560px;
     height: 250px;
     display: flex;
     flex-direction: column;

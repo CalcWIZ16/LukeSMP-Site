@@ -2,7 +2,7 @@
 window.onload = serverStatus();
 function serverStatus() {
   console.log("getting status");
-  $.getJSON('https://api.mcsrvstat.us/2/zero.minr.org', function(data) {
+  $.getJSON('https://api.mcsrvstat.us/2/mc.lukesmp.net', function(data) {
     if (data.motd.clean[0].includes("1")) {
       document.getElementById("server-status").innerHTML = "Status: Online";
     } else {

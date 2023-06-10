@@ -165,7 +165,6 @@ canvas{
     /* align-content: center; */
     /* text-align: left; */
     flex-direction: column;
-    justify-content: flex-start;
 }
 .longBox {
     background-color: var(--light-color);

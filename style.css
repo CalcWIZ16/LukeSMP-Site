@@ -171,6 +171,7 @@ canvas{
     border-radius: 18px;
     padding: 20px;
     margin: 42px;
+    /* height: 88px; */
 }
 .listBox {
     background-color: var(--light-color);
@@ -187,7 +188,7 @@ canvas{
     grid-template-columns: 8% 42% 8% 42%;
 }
 .smallIcon {
-    height: 105px;
+    height: 125px;
     background-color: #a7cfd7;
 }
 .largeIcon {

@@ -4,11 +4,11 @@ function serverStatus() {
   console.log("getting status");
   $.getJSON('https://api.mcsrvstat.us/2/mc.lukesmp.net', function(data) {
     if (data.motd.clean[0].includes("1")) {
-      document.getElementById("server-status").innerHTML = "Status: Online";
+      document.getElementById("server-status").innerHTML = "Online";
     } else {
-        document.getElementById("server-status").innerHTML = "Status: Offline";
+        document.getElementById("server-status").innerHTML = "Offline";
     }
-    document.getElementById("player-count").innerHTML = "Players: " + data.players.online + "/" + data.players.max;
+    document.getElementById("player-count").innerHTML = data.players.online + "/" + data.players.max;
     if (data.players.online > 0) {
         for (let i = 0; i <= 9; i++) {
           var player = data.players.list[i];

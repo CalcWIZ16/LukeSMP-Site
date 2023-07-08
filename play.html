@@ -1,240 +1,183 @@
 <!DOCTYPE html>
-<html  >
-<head>
-  <!-- Site made with Mobirise Website Builder v5.6.11, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.6.11, mobirise.com">
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image:src" content="">
-  <meta property="og:image" content="">
-  <meta name="twitter:title" content="LukeSMP - Play">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/lukesmplogo-02zoomed-1200x1200.ico" type="image/x-icon">
-  <meta name="description" content="">
-  
-  
-  <title>LukeSMP - Play</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/parallax/jarallax.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
-  
-</head>
-<body>
-  
-  <section data-bs-version="5.1" class="menu menu2 cid-sQpcmy4E8i" once="menu" id="menu2-6">
-    
-    <nav class="navbar navbar-dropdown navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="https://www.lukesmp.net">
-                        <img src="assets/images/lukesmplogo-02zoomed-1200x1200.ico" alt="Mobirise" style="height: 4rem;">
+<html>
+    <head>
+        <title>LukeSMP - Play</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="status.js"></script>
+    </head>
+    <body style="background-image: url(assets/banners/play.png);">
+        <div class="navbar" id="navbar">
+            <a href="index.html">
+                <img class="logo" src="assets/logo/logo.png" alt="logo" style="height:75px;">
+            </a>
+            <div>
+                <a href="https://map.lukesmp.net">Map</a>
+                <a href="season4.html">Season 4</a>
+                <a href="rules.html">Rules</a>
+                <a class="button cyanButton" href="play.html">Play Now</a>
+            </div>
+        </div>
+        <div class="section translucent centered" style="flex-direction: column;">
+            <div class="h1">Play</div>
+            <div class="h2">Join today at <i>mc.lukesmp.net</i></div>
+        </div>
+        <div class="section opaque boxes">
+            <div class="boxStack">
+                <div class="stackBox">
+                    <img src="assets/icons/OnlineStatus.svg" alt="Up To Date" class="stackBoxIcon">
+                    <div class="h2" id="server-status">
+                        Unknown
+                    </div>
+                </div>
+                <div class="stackBox">
+                    <img src="assets/icons/PlayerCount.svg" alt="Up To Date" class="stackBoxIcon">
+                    <div class="h2" id="player-count">
+                        Unknown
+                    </div>
+                </div>
+            </div>
+            <div class="listBox">
+                <div class="h2" style="align-self: center;">
+                    Online Players
+                </div>
+                <div class="lists">
+                    <div id="player-heads1" style="grid-column: 1;"></div>
+                    <div class="h3" id="player-list1" style="grid-column: 2;"></div>
+                    <div id="player-heads2" style="grid-column: 3;"></div>
+                    <div class="h3" id="player-list2" style="grid-column: 4;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section translucent centeredVertical">
+            <div class="textBox">
+                <div class="h2">
+                    Verify and Join
+                </div>
+                <div class="p">
+                    For security reasons, in order to join the LukeSMP, you are required to be on the whitelist. To do this, you must verify you identity through the official discord server.<br><br>
+                    Then, make sure to check out all the ways to connect!
+                </div>
+                <div class="buttons">
+                    <div class="button cyanButton">
+                        <a href="https://discord.gg/cWpDGTkyzE" target="_blank" rel="noreferrer noopener">Join the Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section opaque boxes">
+            <div class="smallBox">
+                <div><img src="assets/icons/JavaEdition.svg"class="smallIcon"></div>
+                <div class="h3 boxHeader">Java Edition</div>
+                <div class="p">The LukeSMP is a Java based server so this is the ideal way to play</div>
+            </div>
+            <div class="smallBox">
+                <div><img src="assets/icons/BedrockEdition.svg"class="smallIcon"></div>
+                <div class="h3 boxHeader">Bedrock Edition</div>
+                <div class="p">Connect through GeyserMC's Bedrock Edition translation layer</div>
+            </div>
+            <div class="smallBox">
+                <div><img src="assets/icons/ConsoleEdition.svg"class="smallIcon"></div>
+                <div class="h3 boxHeader">Game Consoles</div>
+                <div class="p">Using a quick workaround, you can connect via a console too</div>
+            </div>
+        </div>
+        <div class="section translucent centeredVertical">
+            <div class="textBox">
+                <div class="h2">
+                    Minecraft on Consoles
+                </div>
+                <div class="p">
+                    On the Xbox, Playstation, and Nintendo Switch editions of Minecraft, you are not able to add custom servers for security reasons. Due to this, you may not think that you're able to play on the LukeSMP but fear not, there's a workaround.<br><br>By using <i><a href="https://github.com/Pugmatt/BedrockConnect" target="_blank" rel="noreferrer noopener">Bedrock Connect</a></i>, a DNS server hosted by the community, you're able to connect and play on Minecraft servers not on Mojang's predetermined list. Select which platform you play on below for a full tutorial on how to set it up.
+                </div>
+                <div class="buttons">
+                    <div class="button cyanButton">
+                        <a href="https://www.youtube.com/watch?v=g8mHvasVHMs" target="_blank" rel="noreferrer noopener">Xbox</a>
+                    </div>
+                    <div class="button purpleButton">
+                        <a href="https://www.youtube.com/watch?v=ND_VFaAXC8M">PlayStation</a>
+                    </div>
+                    <div class="button redButton">
+                        <a href="https://www.youtube.com/watch?v=zalT_oR1nPM" target="_blank" rel="noreferrer noopener">Nintendo Switch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section opaque boxes">
+            <div class="largeBox">
+                <div>
+                    <div class="h3">Join on Java</div>
+                    <div class="p">
+                        <!-- Join on Java Edition by connecting <i>mc.lukesmp.net</i> to your server list and connecting -->
+                        Add LukeSMP to your server list and connect on the latest version of Minecraft
+                    </div>
+                    <div class="buttons" role="button">
+                        <div data-clipboard-text="mc.lukesmp.net" class="button cyanButton">
+                            <a data-clipboard-text="mc.lukesmp.net">mc.lukesmp.net</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/icons/JavaEdition.svg" alt="fill" class="largeIcon">
+                </div>
+            </div>
+            <div class="largeBox">
+                <div>
+                    <div class="h3">Join on Bedrock</div>
+                    <div class="p">
+                        Connect through our Bedrock Edition translation layer: GeyserMC
+                    </div>
+                    <div class="buttons">
+                        <div class="button purpleButton">
+                            <a href="season4.html">GeyserMC</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/icons/BedrockEdition.svg" alt="fill" class="largeIcon">
+                </div>
+            </div>
+        </div>
+        <div class="section translucent centeredVertical">
+            <div class="textBox">
+                <div class="h2">
+                    Account Linking
+                </div>
+                <div class="p">
+                    Link your Java and Bedrock accounts to be able to pick up where you left off on any device. Just link once and you'll be able to join the server from any platform and have your inventory, location, and more sync across all of them!<br><br>
+                    Follow the link below to learn how to link your accounts in just a few quick steps.
+                </div>
+                <div class="buttons">
+                    <div class="button cyanButton">
+                        <a href="accountLinking.html" target="_blank" rel="noreferrer noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="ownClass">
+                <div class="footerLinks">
+                    <a href="play.html">Play</a>
+                    <a href="https://map.lukesmp.net">Map</a>
+                    <a href="rules.html">Rules</a>
+                    <a href="software.html">Software</a>
+                </div>
+                <div class="footerIcons">
+                    <a href="https://discord.gg/cWpDGTkyzE">
+                        <i class="fa-brands fa-discord"></i>
                     </a>
-                </span>
-                
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <a href=https://www.reddit.com/r/lukesmp>
+                        <i class="fa-brands fa-reddit"></i>
+                    </a>
+                    <a href="mailto: luke@lukesmp.net">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
                 </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://map.lukesmp.net">Map</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://www.lukesmp.net/season4">Season 4</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://www.lukesmp.net/rules">Rules</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://www.lukesmp.net/software">Software</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://www.lukesmp.net/downloads">Downloads</a></li></ul>
-                
-                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="https://www.lukesmp.net/play">Play Now</a></div>
-            </div>
-        </div>
-    </nav>
-</section>
-
-<section data-bs-version="5.1" class="header13 cid-sQpmBNRiKo mbr-parallax-background" id="header13-e">
-
-    
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(255, 255, 255);"></div>
-
-    <div class="align-center container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Play</strong></h1>
-                
-                <p class="mbr-text mbr-fonts-style mb-3 display-5">
-                    Support for Java and Bedrock Edition</p>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content6 cid-t1MHoHKRUf" id="content6-1m">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <hr class="line">
-                <p class="mbr-text align-center mbr-fonts-style my-4 display-5"><em>To connect, you must be running Minecraft 1.19.2</em><br></p>
-                <hr class="line">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content4 cid-t8rWB1478Y" id="content4-20">
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
-                    <strong>Account Linking</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-5">You can link your Java and Bedrock accounts to be able to pick up where you left off on any device</h4>
-                <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="https://www.lukesmp.net/accountlinking">Learn More</a></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="features16 cid-sQpn0tSOKg" id="features17-f">
-    
-
-    
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6">
-                    <div class="image-wrapper">
-                        <img src="assets/images/mcjava.jpeg" alt="Mobirise">
-                    </div>
-                </div>
-                <div class="col-12 col-lg">
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style display-5"><strong>Minecraft Java Edition</strong></h6>
-                        <p class="mbr-text mbr-fonts-style mb-4 display-4">Chances are, you've added a server before on <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition" class="text-primary">Minecraft Java Edition</a>, but if not, here's a simple walkthrough of how to do it.<br><br>1. Click on "Multiplayer"<br>2. At the bottom select "Add Server"<br>3. In the "Server Address" field type in 'mc.lukesmp.net'<br>4. Enter whatever you want in the "Server Name" box<br>5. Click "Done"<br>6. The server should now be in your server list, simply select it and press "Join Server"&nbsp;</p>
-                        
-                    </div>
+                <div class="footerLegal">
+                    The LukeSMP Network - Copyright &copy 2021-2023
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="features15 cid-sQpn0REcnT" id="features16-g">
-
-    
-
-    
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg">
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style display-5"><strong>Minecraft Bedrock Edition</strong></h6>
-                        <p class="mbr-text mbr-fonts-style mb-4 display-4"><strong>This will only work on <a href="https://www.xbox.com/en-US/games/store/minecraft-for-windows/9nblggh2jhxj" class="text-primary">Minecraft for Windows 10</a> and Minecraft Pocket Edition (<a href="https://apps.apple.com/us/app/minecraft/id479516143" class="text-primary">iOS</a> or <a href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe&hl=en_US&gl=US" class="text-primary">Android</a>), if you play on a console, please refer to instructions on how to connect through a console edition</strong><br><br>1. Click "Play" and go to the "Servers" tab<br>2. Scroll down and click "Add Server"<br>3. In the "Server Address" field type in the IP address: 'bedrock.lukesmp.net'<br>4. The "Port" field doesn't have to be changed because it defaults to '19132'<br>5. Of course enter a server name (this can be anything)<br>6. Click "Play"&nbsp;</p>
-                        
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="image-wrapper">
-                        <img src="assets/images/mcbedrock.jpg" alt="Mobirise">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="features16 cid-sQpn1DmxQw" id="features17-h">
-    
-
-    
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6">
-                    <div class="image-wrapper">
-                        <img src="assets/images/mcconsole.jpg" alt="Mobirise">
-                    </div>
-                </div>
-                <div class="col-12 col-lg">
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style display-5">
-                            <strong>Minecraft for Consoles</strong></h6>
-                        <p class="mbr-text mbr-fonts-style mb-4 display-4">On the Xbox, Playstation, and Nintendo Switch editions of Minecraft, you are not able to add custom servers for security reasons. Due to this you may not think that you're able to play on the LukeSMP but fear not, there's a workaround. By using "Bedrock Connect", which is a DNS server, you're able to connect and play on Minecraft servers not on Microsoft's predetermined list. Select which platform you play on below for a full tutorial on how to set it up.
-<br>
-<br>IP Address: 'bedrock<em>.lukesmp.net</em>'
-<br>
-<br><a href="https://www.youtube.com/watch?v=g8mHvasVHMs" class="text-primary">Set up on Xbox</a><br><a href="https://www.youtube.com/watch?v=ND_VFaAXC8M" class="text-primary">Set up on PlayStation</a><br><a href="https://www.youtube.com/watch?v=zalT_oR1nPM" class="text-primary">Set up on&nbsp;Nintendo Switch</a><br><a href="https://github.com/Pugmatt/BedrockConnect" class="text-primary">Bedrock Connect's official GitHub page</a></p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="footer3 cid-sTDZykygVL" once="footers" id="footer3-1c">
-
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row align-center mbr-white">
-            <div class="row row-links">
-                <ul class="foot-menu">
-                    
-                    
-                    
-                    
-                    
-                <li class="foot-menu-item mbr-fonts-style display-7"><a href="https://www.lukesmp.net" class="text-primary">Home</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://www.lukesmp.net/play" class="text-primary">Play</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://map.lukesmp.net" class="text-primary">Map</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://www.lukesmp.net/season4" class="text-primary">Season 4</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://www.lukesmp.net/rules" class="text-primary">Rules</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://www.lukesmp.net/software" class="text-primary">Software</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://www.lukesmp.net/downloads" class="text-primary">Downloads</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://www.lukesmp.net/accountlinking" class="text-primary">Account Linking</a></li></ul>
-            </div>
-            <div class="row social-row">
-                <div class="social-list align-right pb-2">
-                    
-                    
-                    
-                    
-                    
-                    
-                <div class="soc-item">
-                        <a href="https://discord.gg/y7v3Zcxq7d" target="_blank">
-                            <span class="mbr-iconfont mbr-iconfont-social socicon-discord socicon" style=""></span>
-                        </a>
-                    </div><div class="soc-item">
-                        <a href="https://www.reddit.com/r/LukeSMP/" target="_blank">
-                            <span class="mbr-iconfont mbr-iconfont-social socicon-reddit socicon"></span>
-                        </a>
-                    </div><div class="soc-item">
-                        <a href="mailto:help@lukesmp.net">
-                            <span class="mbr-iconfont mbr-iconfont-social socicon-mail socicon"></span>
-                        </a>
-                    </div></div>
-            </div>
-            <div class="row row-copirayt">
-                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">The LukeSMP Network - Copyright © 2021-2022</p>
-            </div>
-        </div>
-    </div>
-</section>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap; align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2841253" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Built with Mobirise &#8204;</p><a style="z-index:1" href="https://mobirise.com/website-design-software.html">Web Page Designing Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script> <script src="assets/parallax/jarallax.js"></script> <script src="assets/smoothscroll/smooth-scroll.js"></script> <script src="assets/ytplayer/index.js"></script> <script src="assets/dropdown/js/navbar-dropdown.js"></script> <script src="assets/theme/js/script.js"></script>
-  
-  
-</body>
+    </body>
 </html>

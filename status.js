@@ -3,7 +3,7 @@ window.onload = serverStatus();
 function serverStatus() {
   console.log("getting status");
   $.getJSON('https://api.mcsrvstat.us/2/mc.lukesmp.net', function(data) {
-    if (data.motd.clean[0].includes("1")) {
+    if (data.online == true) {
       document.getElementById("server-status").innerHTML = "Online";
     } else {
         document.getElementById("server-status").innerHTML = "Offline";

@@ -73,15 +73,57 @@ canvas{
     text-align: center;
 }
 .navbar div a {
-    margin: 20px;
+    margin: 10px;
+    padding: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 14px;
+
     text-decoration: none;
     color: var(--light-color);
     font-size: larger;
+}
+.navbar div a:hover {
+    background-color: var(--secondary-color);
     transition:color .2s ease-in-out;
 }
-/* .navbar div a:hover {
-    color: var(--primary-color);
-} */
+.navbar div a:active {
+    background-color: var(--tertiary-color);
+}
+
+.dropbutton {
+    color: #00AAAA;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    margin-top: 12px;
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    background-color: var(--dark-color);
+    border-radius: 22px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    /* color: black; */
+    /* padding: 20px; */
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: var(--secondary-color)
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* SECTIONS */
 .section {
@@ -236,18 +278,29 @@ canvas{
 }
 /* .cyanButton:hover {
     background-color: var(--secondary-color);
+}
+.cyanButton:active {
+    background-color: var(--tertiary-color);
 } */
+
 .purpleButton {
     background-color: var(--secondary-color);
 }
 /* .purpleButton:hover {
     background-color: var(--tertiary-color);
+}
+.purpleButton:active {
+    background-color: var(--primary-color);
 } */
+
 .redButton {
     background-color: var(--tertiary-color);
 }
 /* .redButton:hover {
     background-color: var(--primary-color);
+}
+.redButton:active {
+    background-color: var(--secondary-color);
 } */
 
 /* FOOTER */
@@ -295,10 +348,10 @@ canvas{
     transition:color .2s ease-in-out;
 }
 .footerIcons i:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .footerIcons i:active {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     transition: none;
 }
 

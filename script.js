@@ -1,0 +1,1 @@
+var content = document.querySelector('link[rel="header"]').import;
